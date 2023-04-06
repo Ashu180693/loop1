@@ -1,0 +1,203 @@
+function foo() {
+  let a;
+  window.b = 0;
+  a = window.b;
+  a++;
+  return a;
+}
+foo();
+typeof a;
+typeof window.b;
+Siddhant Chawhan6:38 AM
+question send karo na
+Vidhya Skill School6:38 AM
+function foo() {
+  let a;
+  window.b = 0;
+  a = window.b;
+  a++;
+  return a;
+}
+foo();
+typeof a;
+typeof window.b;
+Vidhya Skill School6:45 AM
+function foo() {
+  let a;
+  window.b = 0;
+  a = window.b;
+  a++;
+  return a;
+}
+foo();
+console.log("typeof a", typeof a);
+console.log(a)
+Vidhya Skill School6:46 AM
+function foo() {
+  let a;
+  window.b = 0;
+  a = window.b;
+  a++;
+  return a;
+}
+foo();
+console.log("typeof a", typeof a);
+console.log(a)
+Vidhya Skill School6:54 AM
+console.log(a)
+var a = 10;
+Vidhya Skill School6:56 AM
+console.log(a)
+let a = 10;
+Sadaf Jamal6:58 AM
+uncaught error
+temporal
+ok
+Vidhya Skill School6:59 AM
+console.log(a)
+const a = 10;
+Vidhya Skill School7:00 AM
+let a = 10;
+console.log(a)
+const a = 10;
+Vidhya Skill School7:02 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+}
+
+console.log(test, b);
+Vidhya Skill School7:05 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+  return test;
+}
+
+console.log(b, this.b, window.b);
+Vidhya Skill School7:07 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+  return test;
+}
+tryMe()
+console.log(b, this.b, window.b);
+Vidhya Skill School7:15 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+  return test;
+}
+
+console.log(typeof typeof b);
+Vidhya Skill School7:17 AM
+typeof b // "undefined"
+I'm an Engineer | JavaScript Engineering | Cohort 9
+
+Vidhya Skill School6:35 AM
+function foo() {
+  let a;
+  window.b = 0;
+  a = window.b;
+  a++;
+  return a;
+}
+foo();
+typeof a;
+typeof window.b;
+Siddhant Chawhan6:38 AM
+question send karo na
+Vidhya Skill School6:38 AM
+function foo() {
+  let a;
+  window.b = 0;
+  a = window.b;
+  a++;
+  return a;
+}
+foo();
+typeof a;
+typeof window.b;
+Vidhya Skill School6:45 AM
+function foo() {
+  let a;
+  window.b = 0;
+  a = window.b;
+  a++;
+  return a;
+}
+foo();
+console.log("typeof a", typeof a);
+console.log(a)
+Vidhya Skill School6:46 AM
+function foo() {
+  let a;
+  window.b = 0;
+  a = window.b;
+  a++;
+  return a;
+}
+foo();
+console.log("typeof a", typeof a);
+console.log(a)
+Vidhya Skill School6:54 AM
+console.log(a)
+var a = 10;
+Vidhya Skill School6:56 AM
+console.log(a)
+let a = 10;
+Sadaf Jamal6:58 AM
+uncaught error
+temporal
+ok
+Vidhya Skill School6:59 AM
+console.log(a)
+const a = 10;
+Vidhya Skill School7:00 AM
+let a = 10;
+console.log(a)
+const a = 10;
+Vidhya Skill School7:02 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+}
+
+console.log(test, b);
+Vidhya Skill School7:05 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+  return test;
+}
+
+console.log(b, this.b, window.b);
+Vidhya Skill School7:07 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+  return test;
+}
+tryMe()
+console.log(b, this.b, window.b);
+Vidhya Skill School7:15 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+  return test;
+}
+
+console.log(typeof typeof b);
+Vidhya Skill School7:17 AM
+typeof b // "undefined"
+Sadaf Jamal7:20 AM
+matlab do baar krne k karan type conversion hogya
+Ajit Arora7:22 AM
+function tryMe() {
+  let test = 10;
+  b = 30;
+  console.log(this.text);
+}
+tryMe();
+console.log(b, this.b, window.b);

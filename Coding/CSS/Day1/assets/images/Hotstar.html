@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/VSS/Practice/Hotstar.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotstar</title>
+    <style>
+      .main-container {
+        background-color: black;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        margin-top: 90px;
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+      }
+      img {
+        height: 250px;
+      }
+      .abs {
+        position: absolute;
+        color: white;
+        margin: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="cards">
+        <img src="./Hotstar_files/1364253-v-17a2ff74143c">
+      </div>
+      <div class="cards">
+        <img src="./Hotstar_files/734327-v" class="img-loader lazy-img-loader loaded" loading="lazy" alt="">
+      </div>
+      <div class="cards">
+        <img src="./Hotstar_files/1476677-v-afe46e2c17e2.webp" class="img-loader lazy-img-loader loaded" loading="lazy" alt="">
+      </div>
+      <div class="cards">
+        <img src="./Hotstar_files/311992-v" class="img-loader lazy-img-loader loaded" loading="lazy" alt="">
+      </div>
+      <div class="cards">
+        <img src="./Hotstar_files/552028-v" class="img-loader lazy-img-loader loaded" loading="lazy" alt="">
+      </div>
+      <div class="cards">
+        <img src="./Hotstar_files/1364261-v-bc200a22b55b" class="img-loader lazy-img-loader loaded" loading="lazy" alt="">
+        <p class="abs">"Retreating from tragedy,"</p>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    p {
+      background-color: burlywood;
+      padding: 20px;
+    }
+
+    @media screen and (min-width: 1001px) {
+      p {
+        background-color: red;
+        font-style: italic;
+      }
+    }
+
+    @media screen and (min-width: 499px) and (max-width: 999px) {
+      p {
+        background-color: yellow;
+        font-style: italic;
+      }
+
+      @media screen and (max-width: 498px) {
+        p {
+          background-color: lightcoral;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          font-size: larger;
+        }
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <p>Hello</p>
+    </div>
+  </body>
+</html>
