@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      .parent {
+        pointer-events: none; /* disables the hover on the .parent                 */
+      }
+
+      .parent:hover {
+        /* styles for parent element when hover is on .child */
+        background: silver;
+      }
+
+      .parent .child {
+        pointer-events: auto; /* enables the hover on the .parent                  */
+      }
+
+      .parent .child:hover {
+        /* styles for child element when hover is on .child  */
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Some text in parent ...
+      <div class="child">Put mouse over...</div>
+      Some text in parent ...
+    </div>
+  </body>
+</html>
