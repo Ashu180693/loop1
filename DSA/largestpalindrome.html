@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function findLargestPalindrome(str) {
+    const chars = str.split("");
+    const palindromes = [];
+
+    for (let i = 0; i < chars.length; i++) {
+      for (let j = i + 1; j <= chars.length; j++) {
+        const substring = chars.slice(i, j).join("");
+        if (substring === substring.split("").reverse().join("")) {
+          palindromes.push(substring);
+        }
+      }
+    }
+
+    if (palindromes.length === 0) {
+      return "No palindromes found";
+    } else {
+      return palindromes.reduce((largest, current) => {
+        return current.length > largest.length ? current : largest;
+      });
+    }
+  }
+
+  // Example usage:
+  console.log(
+    findLargestPalindrome("Hello Mam, how are you. Madam, do you know racecar?")
+  ); // Output: "abcba"
+</script>
