@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../../Project 1"
+	},
+	{
+		"path": "../../VSS"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "VSS"
+  }
+}

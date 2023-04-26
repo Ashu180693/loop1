@@ -1,4 +1,4 @@
-function printNumbers(num) {
+printNumbers = (num) => {
   if (typeof num !== "number" || Number.isNaN(num)) {
     return "Please enter a valid number";
   }
@@ -11,6 +11,6 @@ function printNumbers(num) {
     output += i + " ";
   }
   console.log(output);
-}
+};
 
 printNumbers(1000);

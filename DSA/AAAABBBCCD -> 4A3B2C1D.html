@@ -18,11 +18,12 @@
     for (let i = 0; i < str.length; i++) {
       // If the current character is same as the next character, increase the count
       if (str[i] === str[i + 1]) {
-        count++;
+        // i = 0,1,2,3//4,5,6//7,8//
+        count++; // c = 2,3,4,//2,3//2//
       } else {
         // If the current character is different from the next character,
         // append the count and character to the compressed string
-        compressedStr += count + str[i];
+        compressedStr += count + str[i]; // cmprsdstr = 4A3B2C1D
         count = 1;
       }
     }
