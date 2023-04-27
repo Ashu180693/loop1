@@ -9,28 +9,38 @@
   <body></body>
 </html>
 <script>
-  const str = "madam";
+  const checkPalindrome = (input) => {
+    input = input.toLowerCase();
+    let newStr = "";
+    for (let i = 0; i < input.length; i++) {
+      newStr = input[i] + newStr;
+    }
 
-  /*const originalArray = [1, 2, 3, 4, 5];
-const reversedArray = [...originalArray].reverse();
-console.log(reversedArray); // Output: [5, 4, 3, 2, 1] 
+    /* if (input === newStr) {
+    return true;
+  } else {
+    false;
+  } */
 
+    return input === newStr;
+  };
 
-const str = "Hello, World!";
-const arr = str.split("");
-console.log(arr); // Output: ["H", "e", "l", "l", "o", ",", " ", "W", "o", "r", "l", "d", "!"]
+  const checkPalindromeV2 = (input) => {
+    input = input.toLowerCase();
+    let newStr = "";
 
+    for (let i = input.length - 1; i >= 0; i--) {
+      newStr = newStr + input[i];
+    }
 
-*/
+    /* if (input === newStr) {
+      return true;
+    } else {
+      false;
+    } */
 
-  const arr = str.split("");
+    return input === newStr;
+  };
 
-  const arr2 = arr.reverse();
-
-  if (arr === arr2);
-  {
-    return "pallindrom";
-  }
-
-  return "not palindrom";
+  console.log(checkPalindrome("Madam"));
 </script>

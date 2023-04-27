@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function findThreeElements(arr, X) {
+    for (let i = 0; i < arr.length - 2; i++) {
+      for (let j = i + 1; j < arr.length - 1; j++) {
+        for (let k = j + 1; k < arr.length; k++) {
+          if (arr[i] + arr[j] + arr[k] === X) {
+            return [arr[i], arr[j], arr[k]];
+          }
+        }
+      }
+    }
+    return [];
+  }
+
+  const arr = [1, 2, 3, 4, 5, 6];
+  const X = 6;
+  const threeElements = findThreeElements(arr, X);
+  console.log(threeElements); // Output: [1, 2, 3]
+</script>
