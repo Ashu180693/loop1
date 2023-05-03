@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>union and intersection</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function unionArrays(arr1, arr2) {
+     let union = [];
+     for (le i = 0; i < arr1.length; i++) {
+       if  {
+         union.push(arr1[i]);
+       }
+     }
+     for (let j = 0; j < arr2.length; j++) {
+       if (!union.includes(arr2[j])) {
+         union.push(arr2[j]);
+       }
+     }
+     console.log(union);
+   }
+   function intersecArrays(arr1, arr2) {
+     let intersection = [];
+     let loopingArray = [];
+     let smallArr = [];
+     if (arr1.length > arr2.length) {
+       loopingArray = arr1;
+       smallArr = arr2;
+     }
+     loopingArray = arr2;
+     smallArr = arr1;
+     for (let i = 0; i < loopingArray.length; i++) {
+       if (smallArr.includes(loopingArray[i])) {
+         intersection.push(loopingArray[i]);
+       }
+     }
+     console.log(intersection);
+   }
+
+   findUnion([1, 2, 3, 4, 5, 1, 7], [5, 6, 8, 1, 2]);
+   let arr1 = [1, 2, 3, 6, 8];
+   let arr2 = [2, 3, 4, 7, 8, 9];
+   unionArrays(arr1, arr2);
+   intersecArrays(arr1, arr2);
+</script>

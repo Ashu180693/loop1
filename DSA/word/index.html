@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  const sentence = "Hello my name is Ankit";
+  const testCase1 = "funny";
+  const testCase2 = "ankit";
+
+  // Split the sentence into an array of words
+  const words = sentence.split(" ");
+
+  // Loop through the array and compare each word with the test cases
+  let isTestCase1Present = false;
+  let isTestCase2Present = false;
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] === testCase1) {
+      isTestCase1Present = true;
+    }
+    if (words[i] === testCase2) {
+      isTestCase2Present = true;
+    }
+  }
+
+  // Output the results
+  console.log(isTestCase1Present); // false
+  console.log(isTestCase2Present); // true
+</script>
